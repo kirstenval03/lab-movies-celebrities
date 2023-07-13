@@ -1,0 +1,17 @@
+{{!-- views/movies/movie-details.hbs --}}
+<a href="/movies">Go back to all movies</a>
+
+<h1>{{title}}</h1>
+<hr>
+<p>Genre: {{genre}}</p>
+<p>Plot: {{plot}}</p>
+<hr>
+
+ <form action="/movies/delete/{{_id}}" method="GET">
+      <button>Delete</button>
+    </form>
+ {{!-- //<a href="/movies/edit/{{_id}}">Edit</a>  --}}
+
+  <form action="/movies/edit/{{_id}}" method="GET">
+      <button>EDIT</button>
+    </form>
